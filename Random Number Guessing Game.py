@@ -210,7 +210,7 @@ ctk.set_default_color_theme('dark-blue')
 
 # this initialises tkinter
 window = ctk.CTk()
-window.title("Password Generator")
+window.title("Random Number Guessing Game")
 window.geometry("1200x500+10+10")
 
 #this defines the 4 frames
