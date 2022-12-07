@@ -1,8 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[252]:
-
 
 # importing packages
 from random import random
@@ -15,16 +10,10 @@ from tkinter import *
 from tkinter import ttk
 
 
-# In[253]:
-
-
 # setting the initial number that the computer chooses
 computer_number = random.randint(1,10)
 # set the counter that counts the guesses
 counter = 1
-
-
-# In[254]:
 
 
 def guess():
@@ -50,8 +39,6 @@ def guess():
         else:
             game_over()
 
-
-# In[255]:
 
 
 def load_main():
@@ -82,8 +69,6 @@ def load_main():
         command=lambda:guess()
         ).place(rely=0.7,relx=0.5, anchor=CENTER)
 
-
-# In[256]:
 
 
 def load_correct():
@@ -116,9 +101,6 @@ def load_correct():
         text_font=("Rockwell",40),
         command=window.destroy
         ).pack(padx=20,pady=20)
-
-
-# In[257]:
 
 
 def load_incorrect():
@@ -163,8 +145,6 @@ def load_incorrect():
         ).pack(padx=20,pady=20)
 
 
-# In[258]:
-
 
 def play_again():
     '''this function runs when a new game is requested'''
@@ -177,8 +157,6 @@ def play_again():
     # loads main frame
     load_main()
 
-
-# In[259]:
 
 
 def game_over():
@@ -216,8 +194,6 @@ def game_over():
         ).pack(padx=20,pady=20)
 
 
-# In[260]:
-
 
 def clear_widgets(frame):
     'this function destroys all the widgets on the specified frame'
@@ -225,8 +201,6 @@ def clear_widgets(frame):
     for widget in frame.winfo_children():
         widget.destroy()
 
-
-# In[261]:
 
 
 # this initialises the UI settings
