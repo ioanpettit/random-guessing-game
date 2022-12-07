@@ -1,2 +1,2 @@
 # random-guessing-game
-A User Inteface for a simple random guessing game.
+A User Intreface for a simple random guessing game.
